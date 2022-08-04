@@ -1,5 +1,5 @@
 package com.assessment.ElectricityManagementSystem.service.interfaces;
 
-public interface BillService {
+public interface BillCalculatorService {
     Double calculateBill(Integer units);
 }

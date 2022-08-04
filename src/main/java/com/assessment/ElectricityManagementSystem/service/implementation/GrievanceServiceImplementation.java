@@ -24,7 +24,6 @@ public class GrievanceServiceImplementation implements GrievanceService {
             hashMap.put("Response", grievanceModel1);
         } catch (Exception exception) {
             hashMap.put("Status", "Failed");
-
         }
         return hashMap;
     }
