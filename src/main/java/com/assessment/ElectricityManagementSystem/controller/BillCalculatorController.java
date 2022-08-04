@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @RequestMapping("/calculateBill")
-public class BillController {
+public class BillCalculatorController {
     @Autowired
     BillCalculatorService billCalculatorService;
 

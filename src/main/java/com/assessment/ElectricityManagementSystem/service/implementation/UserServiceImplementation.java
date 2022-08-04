@@ -2,9 +2,10 @@ package com.assessment.ElectricityManagementSystem.service.implementation;
 
 import com.assessment.ElectricityManagementSystem.model.UserModel;
 import com.assessment.ElectricityManagementSystem.dao.UserDAO;
+import org.springframework.stereotype.Service;
 import com.assessment.ElectricityManagementSystem.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 
 @Service
 public class UserServiceImplementation implements UserService {
@@ -14,7 +15,7 @@ public class UserServiceImplementation implements UserService {
 
     @Override
     public UserModel createUser(UserModel userModel) {
-        UserModel userModel1 = this.userDAO.save(userModel);
-        return userModel1;
+        UserModel createUserModel = this.userDAO.save(userModel);
+        return createUserModel;
     }
 }
