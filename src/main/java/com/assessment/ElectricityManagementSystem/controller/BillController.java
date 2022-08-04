@@ -17,7 +17,7 @@ public class BillController {
 
     @GetMapping("/{units}")
     public ResponseEntity calculateBill(@PathVariable("units") Integer units) {
-        Double bill = billService.calculateBill(units);
-        return new ResponseEntity(bill, HttpStatus.OK);
+        Double billAmount = billService.calculateBill(units);
+        return new ResponseEntity(billAmount, HttpStatus.OK);
     }
 }
